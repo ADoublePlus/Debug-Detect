@@ -46,6 +46,7 @@
     <Compile Include="AntiDebug.cs" />
     <Compile Include="AntiDump.cs" />
     <Compile Include="AntiEmulation.cs" />
+    <Compile Include="AntiNet.cs" />
     <Compile Include="Main.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

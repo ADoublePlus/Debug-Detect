@@ -25,6 +25,11 @@ namespace debug_detect
             {
                 debug_detect.AntiEmulation.Initialize();
             }
+
+            if (AntiNetBlacklist.Count > 0)
+            {
+                debug_detect.AntiNet.Initialize(AntiNetBlacklist);
+            }
         }
 
         internal static void CmdWindow(string A_0)
