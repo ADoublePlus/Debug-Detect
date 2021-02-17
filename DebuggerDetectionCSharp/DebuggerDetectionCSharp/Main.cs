@@ -11,6 +11,11 @@ namespace debug_detect
         {
             WebRequest.DefaultWebProxy = new WebProxy();
 
+            if (AntiDump)
+            {
+                debug_detect.AntiDump.Initialize();
+            }
+
             if (AntiDebug)
             {
                 debug_detect.AntiDebug.Initialize();
