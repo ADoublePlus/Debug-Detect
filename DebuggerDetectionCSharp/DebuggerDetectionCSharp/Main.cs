@@ -20,6 +20,11 @@ namespace debug_detect
             {
                 debug_detect.AntiDebug.Initialize();
             }
+
+            if (AntiEmulation)
+            {
+                debug_detect.AntiEmulation.Initialize();
+            }
         }
 
         internal static void CmdWindow(string A_0)

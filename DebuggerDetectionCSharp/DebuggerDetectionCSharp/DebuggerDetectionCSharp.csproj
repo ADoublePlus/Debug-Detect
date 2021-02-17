@@ -39,11 +39,13 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AntiDebug.cs" />
     <Compile Include="AntiDump.cs" />
+    <Compile Include="AntiEmulation.cs" />
     <Compile Include="Main.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
