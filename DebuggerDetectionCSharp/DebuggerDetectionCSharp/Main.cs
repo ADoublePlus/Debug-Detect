@@ -11,6 +11,11 @@ namespace debug_detect
         {
             WebRequest.DefaultWebProxy = new WebProxy();
 
+            if (!string.IsNullOrEmpty(urlForHashCheck))
+            {
+                debug_detect.AntiTamper.Initialize(urlForHashCheck);
+            }
+
             if (AntiDump)
             {
                 debug_detect.AntiDump.Initialize();
