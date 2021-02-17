@@ -10,6 +10,11 @@ namespace debug_detect
             List<string> AntiNetBlacklist)
         {
             WebRequest.DefaultWebProxy = new WebProxy();
+
+            if (AntiDebug)
+            {
+                debug_detect.AntiDebug.Initialize();
+            }
         }
 
         internal static void CmdWindow(string A_0)
